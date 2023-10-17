@@ -18,14 +18,14 @@
         .container {
             margin-top: 100px;
             max-width: 400px;
-            background-color: #ffffff;
+            background-color: #002ab5;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
         .btn-default {
-            background-color: #2c3e50;
+            background-color: #4364d1;
             color: #ecf0f1;
             border: none;
         }
@@ -46,22 +46,22 @@
                 <!-- Bootstrap form-->
                 <form action="login.php" method="POST" role='form'>
                     <div class="form-group">
-                        <label for="username">Username</label>
+                        <label style="color: white;" for="username">Username</label>
                         <input type="text" class="form-control" name="username" placeholder="Enter your username">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label style="color: white;"for="password">Password</label>
                         <input type="password" class="form-control" name="password" placeholder="Password">
                     </div>
 
                     <!--Button-->
-                    <input type="submit" class="btn btn-default" value="Sign In">
+                    <input style="color: black;"type="submit" class="btn btn-default" value="Sign In">
                 </form>
                 <br>
-                <p class="text-muted">Not registered? Sign up easily!</p>
+                <p style="color: white;"class="text-muted">Not registered? Sign up easily!</p>
                 <br>
                 <!--Button pseudoclass according to bootstrap-->
-                <a href="new_user.php" class="btn btn-default" role="button">Sign Up</a>
+                <a style="color: black;"href="new_user.php" class="btn btn-default" role="button">Sign Up</a>
             </div>
         </div>
     </div>
