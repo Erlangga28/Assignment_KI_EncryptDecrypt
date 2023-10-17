@@ -1,6 +1,6 @@
 <!-- <?php
 //For connecting the database-->
-$link = mysqli_connect("localhost","root","", "projectusm");
+$link = mysqli_connect("localhost","root","", "users");
 if (!$link) {
     die("Connection failed: " . mysql_error());
 }else{

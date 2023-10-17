@@ -1,7 +1,7 @@
 <!--For connecting the database-->
 <?php
 	//For connecting the database
-	$link = mysqli_connect("localhost","root","", "projectusm");
+	$link = mysqli_connect("localhost","root","", "users");
 	if (!$link) {
 	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
 	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
