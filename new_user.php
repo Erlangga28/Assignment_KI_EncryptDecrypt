@@ -18,10 +18,12 @@
 		      <div class="form-group">
 		      	<label for="fname">First Name</label>
 		      	<input type="text" class="form-control" name="fname" placeholder="Enter your first name" >
+				  <small id="emailHelp" class="form-text text-muted">Please fill in with your first name.</small>
 		      </div>
 		      <div class="form-group">
 		      	<label for="lname">Last Name</label>
 		      	<input type="text" class="form-control" name="lname" placeholder="Enter your last name" >
+				  <small id="emailHelp" class="form-text text-muted">Please fill in with your last name.</small>
 		      </div>
 		      <div class="form-group">
 		        <label for="email">Email address</label>
@@ -31,10 +33,12 @@
 		      <div class="form-group">
 		      	<label for="fname">Username</label>
 		      	<input type="text" class="form-control" name="username" placeholder="Select a unique username" >
+				  <small id="emailHelp" class="form-text text-muted">Input your username whatever you want.</small>
 		      </div>
 		      <div class="form-group">
 		        <label for="password">Password</label>
 		        <input type="password" class="form-control" name="password" placeholder="Password">
+				<small id="emailHelp" class="form-text text-muted">Insert your password.</small>
 		        <br>
 		        <!--Button-->
 		    	<input type="submit" class="btn btn-default" value="Register">.
