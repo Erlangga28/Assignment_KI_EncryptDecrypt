@@ -1,0 +1,14 @@
+CREATE DATABASE users;
+USE users;
+CREATE TABLE personal_info (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(255) NOT NULL
+);
+CREATE TABLE private_data (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  id_card_image BLOB NOT NULL,
+  pdf_file BLOB NOT NULL,
