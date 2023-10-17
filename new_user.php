@@ -33,7 +33,7 @@
 		      <div class="form-group">
 		      	<label for="fname">Username</label>
 		      	<input type="text" class="form-control" name="username" placeholder="Select a unique username" >
-				  <small id="emailHelp" class="form-text text-muted">Input your username whatever you want.</small>
+				  <small id="emailHelp" class="form-text text-muted">Input your unique username.</small>
 		      </div>
 		      <div class="form-group">
 		        <label for="password">Password</label>
