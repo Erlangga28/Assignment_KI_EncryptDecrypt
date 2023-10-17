@@ -28,7 +28,7 @@
 	}
 	else
 	{
-		echo "Error: " . $query . "<br>" . mysql_error();
+		echo "Error: " . $query . "<br>" . 'mysql_error'();
 	}
 
 	mysqli_close($link);
