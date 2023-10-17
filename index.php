@@ -61,7 +61,7 @@
                 <p class="text-muted">Not registered? Sign up easily!</p>
                 <br>
                 <!--Button pseudoclass according to bootstrap-->
-                <a href="new_user.php" class="btn btn-default" role="button">Signn Up</a>
+                <a href="new_user.php" class="btn btn-default" role="button">Signnn Up</a>
             </div>
         </div>
     </div>
