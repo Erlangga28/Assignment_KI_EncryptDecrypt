@@ -14,7 +14,7 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<!-- Bootstrap form-->
-		    <form action="register.php" method="POST" role='form'>
+		    <form action="index.php" method="POST" role='form'>
 		      <div class="form-group">
 		      	<label for="fname">First Name</label>
 		      	<input type="text" class="form-control" name="fname" placeholder="Enter your first name" >
