@@ -38,6 +38,8 @@
 		        <br>
 		        <!--Button-->
 		    	<input type="submit" class="btn btn-default" value="Register">.
+
+				<a href="upload_pdf.php" class="btn btn-default" role="button">PDF </a>
 		      </div>
 
 
