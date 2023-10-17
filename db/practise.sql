@@ -26,39 +26,37 @@ SET time_zone = "+00:00";
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `id` int(3) UNSIGNED NOT NULL,
-  `fname` text NOT NULL,
-  `lname` text NOT NULL,
-  `email` varchar(23) NOT NULL,
-  `username` varchar(23) NOT NULL,
-  `password` varchar(23) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
 
+CREATE TABLE IF NOT EXISTS id_card_images (
+    id INT AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    image_data BLOB NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
 
+CREATE TABLE IF NOT EXISTS files (
+    id INT AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    file_name VARCHAR(255) NOT NULL,
+    file_data BLOB NOT NULL,
+    file_type VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
 
+CREATE TABLE IF NOT EXISTS video_files (
+    id INT AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    video_name VARCHAR(255) NOT NULL,
+    video_data BLOB NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
 
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`),
-  ADD KEY `username_2` (`username`);
-
---
--- Indexes for table `user_log`
---
-ALTER TABLE `user_log`
-  ADD PRIMARY KEY (`user_log_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
---
--- AUTO_INCREMENT for table `user_log`
---
