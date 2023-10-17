@@ -19,7 +19,7 @@ session_start();
 	$hashed_password= crypt($input_password, $salt); //no password decryption for crypt() function
 
 	//fetch previous password
-		$query = mysqli_query($link, "SELECT password FROM users WHERE username='$usern' ")or die(mysql_error());
+		$query = mysqli_query($link, "SELECT password FROM users WHERE username='$usern' ")or die('mysql_error'());
 		$row = mysqli_fetch_row($query);
 		$previous_password = $row[0];
 			 
