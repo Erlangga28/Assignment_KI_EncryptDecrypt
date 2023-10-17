@@ -2,17 +2,16 @@
     <html>
     <head lang="en">
     <meta charset="utf-8">
-    <title>Ajax File Upload with jQuery and PHP</title>
+    <title>File Upload</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.11.3-jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
     <div class="container">
     <div class="row">
     <div class="col-md-8">
-    <h1><a href="#" target="_blank"><img src="logo.png" width="80px"/>Ajax File Uploading with Database MySql</a></h1>
+    <h1><a href="#" target="_blank"><img src="logo.png" width="80px"/>File Uploading</a></h1>
     <hr> 
     <form id="form" action="ajaxupload.php" method="post" enctype="multipart/form-data">
     <div class="form-group">
@@ -29,7 +28,6 @@
     </form>
     <div id="err"></div>
     <hr>
-    <p><a href="https://www.cloudways.com" target="_blank">www.Cloudways.com</a></p>
     </div>
     </div>
     </div></body></html>
