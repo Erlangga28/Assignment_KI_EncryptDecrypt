@@ -47,4 +47,4 @@ if ($conn->query($sql) === TRUE) {
 $id_card_image = mysqli_real_escape_string($conn, $id_card_image);
 $pdf_file = mysqli_real_escape_string($conn, $pdf_file);
 $doc_file = mysqli_real_escape_string($conn, $doc_file);
-$xls_file = mysqli_real_escape_string($conn, $doc_file);
+$xls_file = mysqli_real_escape_string($conn, $xls_file);
