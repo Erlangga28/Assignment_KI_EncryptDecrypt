@@ -1,7 +1,7 @@
 <!--For connecting the database-->
 <?php
 	//For connecting the database
-	$link = mysqli_connect("localhost","root","", "practise");
+	$link = mysqli_connect("localhost","root","", "projectusm");
 	if (!$link) {
 	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
 	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -12,7 +12,7 @@
 
 	//session_start();
 		$username=$_POST['username'];
-		$fname=$_POST['fname'];
+		$fname=$_POST['name'];
 		$lname=$_POST['lname'];
 		$email=$_POST['email'];
 		$password=$_POST['password'];
@@ -20,7 +20,7 @@
 		$hashed_password = crypt ( $password, $salt); //password hashing
 		
 		
-	$query= "INSERT INTO users (id, fname, lname, email, username, password) VALUES ('','$fname','$lname','$email','$username','$hashed_password')";
+	$query= "INSERT INTO komentar (id, fname, lname, email, username, password) VALUES ('','$fname','$lname','$email','$username','$hashed_password')";
 
 	if(mysqli_query($link, $query) == TRUE)
 	{

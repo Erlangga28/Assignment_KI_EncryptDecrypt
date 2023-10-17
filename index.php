@@ -31,7 +31,7 @@
       <text class="text-muted">Not registered? Sign up easily!</textarea>
       <br>
       <!--Button pseudoclass according to bootstrap-->
-      <a href="newuser.php" class="btn btn-default" role="button">Sign Up</a>
+      <a href="new_user.php" class="btn btn-default" role="button">Sign Up </a>
 
   </div>
 
